@@ -47,8 +47,8 @@ async function loadLaunchData() {
   if (firstLaunch) {
     console.log("Launch data already loaded");
     return;
-  }else {
-    await populateLaunches()
+  } else {
+    await populateLaunches();
   }
   console.log("Downloading launch data...");
   const launchDocs = response.data.docs;
