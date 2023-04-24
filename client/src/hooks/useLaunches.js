@@ -24,7 +24,7 @@ function useLaunches(onSuccessSound, onAbortSound, onFailureSound) {
       const mission = data.get("mission-name");
       const rocket = data.get("rocket-name");
       const target = data.get("planets-selector");
-      const response = await httpSubmitLaunch({
+      await httpSubmitLaunch({
         launchDate,
         mission,
         rocket,
